@@ -59,7 +59,7 @@ object VeinMinerEvent {
         val uuid = player.uuid
 
         // Check if player has the client mod and pressed the key
-        if (FabricNetworking.registeredPlayers.contains(uuid) && !FabricNetworking.readyToVeinmine.contains(uuid)) return@register true
+        // if (FabricNetworking.registeredPlayers.contains(uuid) && !FabricNetworking.readyToVeinmine.contains(uuid)) return@register true
 
         mcCoroutineTask(delay = settings.delay.ticks) {
             veinmineInfo.veinmine(true)
